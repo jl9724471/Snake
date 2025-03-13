@@ -1,0 +1,158 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.695652",
+   "Default View_TopLeft":"-331,-198",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Interfaces View_Layers":"/reset_1:false|/sys_clock_1:false|/snake_increment_0_update_clk:false|/clk_wiz_0_clk_out1:false|",
+   "Interfaces View_ScaleFactor":"0.950122",
+   "Interfaces View_TopLeft":"-356,-187",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x 0 -y 900 -defaultsOSRD
+preplace port port-id_Hsync -pg 1 -lvl 7 -x 1500 -y 560 -defaultsOSRD
+preplace port port-id_Vsync -pg 1 -lvl 7 -x 1500 -y 910 -defaultsOSRD
+preplace port port-id_reset_led -pg 1 -lvl 7 -x 1500 -y 530 -defaultsOSRD
+preplace portBus vgaRed -pg 1 -lvl 7 -x 1500 -y 820 -defaultsOSRD
+preplace portBus vgaGreen -pg 1 -lvl 7 -x 1500 -y 850 -defaultsOSRD
+preplace portBus vgaBlue -pg 1 -lvl 7 -x 1500 -y 880 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x 0 -y 870 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 0 -x 0 -y 840 -defaultsOSRD -left
+preplace portBus JC -pg 1 -lvl 7 -x 1500 -y 20 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 150 -y 840 -defaultsOSRD -pinDir resetn left -pinY resetn 20L -pinDir clk_in1 left -pinY clk_in1 60L -pinDir clk_out1 right -pinY clk_out1 20R -pinDir locked right -pinY locked 40R
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -x 800 -y 440 -defaultsOSRD -pinDir BRAM_PORTA left -pinY BRAM_PORTA 20L -pinDir BRAM_PORTA.addra left -pinY BRAM_PORTA.addra 40L -pinDir BRAM_PORTA.clka left -pinY BRAM_PORTA.clka 60L -pinDir BRAM_PORTA.douta left -pinY BRAM_PORTA.douta 80L
+preplace inst VGA_output_0 -pg 1 -lvl 4 -x 800 -y 760 -swap {3 4 0 1 2 7 8 9 5 6} -defaultsOSRD -pinDir reset left -pinY reset 100L -pinDir clk left -pinY clk 120L -pinBusDir colour left -pinBusY colour 20L -pinBusDir X left -pinBusY X 40L -pinBusDir Y left -pinBusY Y 60L -pinBusDir RED right -pinBusY RED 60R -pinBusDir GRN right -pinBusY GRN 90R -pinBusDir BLU right -pinBusY BLU 120R -pinDir HSYNC right -pinY HSYNC 20R -pinDir VSYNC right -pinY VSYNC 40R
+preplace inst memory_mapper_0 -pg 1 -lvl 3 -x 450 -y 420 -swap {4 5 6 7 0 1 2 3} -defaultsOSRD -pinDir reset left -pinY reset 60L -pinDir clk left -pinY clk 80L -pinBusDir X right -pinBusY X 60R -pinBusDir Y right -pinBusY Y 80R -pinBusDir X_cell left -pinBusY X_cell 20L -pinBusDir Y_cell left -pinBusY Y_cell 40L -pinBusDir cell_state right -pinBusY cell_state 20R -pinBusDir address right -pinBusY address 40R
+preplace inst cell_array_ag_wraper_0 -pg 1 -lvl 3 -x 450 -y 60 -swap {8 1 2 3 5 4 11 9 7 6 0 10} -defaultsOSRD -pinDir clk right -pinY clk 140R -pinDir reset left -pinY reset 160L -pinDir update_clk right -pinY update_clk 40R -pinBusDir player_direction right -pinBusY player_direction 80R -pinBusDir X_cell left -pinBusY X_cell 200L -pinBusDir Y_cell left -pinBusY Y_cell 180L -pinBusDir selected_cell_state right -pinBusY selected_cell_state 200R -pinBusDir apple_try_set_H right -pinBusY apple_try_set_H 160R -pinBusDir apple_try_set_V right -pinBusY apple_try_set_V 120R -pinDir LFSR_stop right -pinY LFSR_stop 100R -pinDir remove_tail right -pinY remove_tail 20R -pinDir ate_apple right -pinY ate_apple 180R
+preplace inst length_state_machine_0 -pg 1 -lvl 6 -x 1380 -y 60 -swap {3 1 2 0} -defaultsOSRD -pinDir reset left -pinY reset 320L -pinDir update_clk left -pinY update_clk 40L -pinDir ate_apple left -pinY ate_apple 280L -pinDir remove_tail left -pinY remove_tail 20L
+preplace inst apple_setter_0 -pg 1 -lvl 5 -x 1140 -y 140 -swap {4 3 0 2 1 5} -defaultsOSRD -pinDir reset left -pinY reset 140L -pinDir clk left -pinY clk 120L -pinDir stop left -pinY stop 20L -pinBusDir H_select left -pinBusY H_select 80L -pinBusDir V_select left -pinBusY V_select 40L -pinBusDir state right -pinBusY state 20R
+preplace inst snake_increment_0 -pg 1 -lvl 5 -x 1140 -y 600 -defaultsOSRD -pinDir Hsync left -pinY Hsync 20L -pinDir reset left -pinY reset 40L -pinBusDir divisor left -pinBusY divisor 60L -pinDir update_clk right -pinY update_clk 20R
+preplace inst direction_decider_0 -pg 1 -lvl 5 -x 1140 -y 420 -swap {2 3 1 0} -defaultsOSRD -pinDir clk left -pinY clk 60L -pinDir reset left -pinY reset 80L -pinBusDir switch_array left -pinBusY switch_array 40L -pinBusDir direction left -pinBusY direction 20L
+preplace netloc VGA_output_0_BLU 1 4 3 N 880 NJ 880 NJ
+preplace netloc VGA_output_0_GRN 1 4 3 N 850 NJ 850 NJ
+preplace netloc VGA_output_0_HSYNC 1 4 3 1000 560 NJ 560 NJ
+preplace netloc VGA_output_0_RED 1 4 3 N 820 NJ 820 NJ
+preplace netloc VGA_output_0_VSYNC 1 3 4 NJ 200 960 910 NJ 910 NJ
+preplace netloc VGA_output_0_X 1 3 1 640J 480n
+preplace netloc VGA_output_0_Y 1 3 1 600J 500n
+preplace netloc apple_setter_0_H_select 1 3 2 NJ 220 NJ
+preplace netloc apple_setter_0_V_select 1 3 2 NJ 180 NJ
+preplace netloc blk_mem_gen_0_douta 1 3 1 680 520n
+preplace netloc btn_1 1 0 5 NJ 320 NJ 320 NJ 320 NJ 320 940
+preplace netloc cell_array_ag_wraper_0_LFSR_stop 1 3 2 NJ 160 N
+preplace netloc cell_array_ag_wraper_0_ate_apple 1 3 3 640J 340 NJ 340 N
+preplace netloc cell_array_ag_wraper_0_selected_cell_state 1 3 1 600 260n
+preplace netloc clk_wiz_0_clk_out1 1 2 5 300 920 660 580 920J 360 1280J 20 N
+preplace netloc clk_wiz_0_locked 1 2 5 N 880 620J 720 NJ 720 NJ 720 1480J
+preplace netloc direction_decider_0_direction 1 3 2 NJ 140 1000J
+preplace netloc length_state_machine_0_remove_tail 1 3 3 NJ 80 NJ 80 NJ
+preplace netloc memory_mapper_0_X_cell 1 2 1 300 260n
+preplace netloc memory_mapper_0_Y_cell 1 2 1 280 240n
+preplace netloc memory_mapper_0_adress 1 3 1 680 460n
+preplace netloc reset_1 1 0 6 NJ 800 60 800 260 900 680 940 980 380 NJ
+preplace netloc snake_increment_0_update_clk 1 3 3 NJ 100 NJ 100 1260
+preplace netloc sw_1 1 0 5 20 960 NJ 960 NJ 960 NJ 960 1020
+preplace netloc sys_clock_1 1 0 2 NJ 900 N
+preplace cgraphic comment_1 place left 110 0 textcolor 4 linecolor 3
+preplace cgraphic comment_0 place left 90 128 textcolor 4 linecolor 3
+levelinfo -pg 1 0 40 150 450 800 1140 1380 1500
+pagesize -pg 1 -db -bbox -sgen -110 0 1640 970
+",
+   "No Loops_ScaleFactor":"0.790486",
+   "No Loops_TopLeft":"-186,-18",
+   "PinnedBlocks":"/VGA_output_0|/blk_mem_gen_0|/clk_wiz_0|/length_state_machine_0|/snake_increment_0|/apple_setter_0|/direction_decider_0|/memory_mapper_0|/cell_array_ag_wraper_0|",
+   "PinnedPorts":"vgaRed|vgaGreen|vgaBlue|Hsync|Vsync|",
+   "Reduced Jogs_Layers":"/reset_1:true|/sys_clock_1:true|/snake_increment_0_update_clk:true|/clk_wiz_0_clk_out1:true|",
+   "Reduced Jogs_ScaleFactor":"0.540859",
+   "Reduced Jogs_TopLeft":"-675,4",
+   "comment_0":"angle is set to get frequency just right",
+   "comment_1":"changeing the switch input rapidaly can corrupt the memory
+not a problem for the final design, but good to keep in mind",
+   "commentid":"comment_0|comment_1|",
+   "fillcolor_comment_0":"",
+   "font_comment_0":"14",
+   "font_comment_1":"14",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -200 -y 90 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x -200 -y 550 -defaultsOSRD
+preplace port port-id_Hsync -pg 1 -lvl 7 -x 1970 -y 590 -defaultsOSRD
+preplace port port-id_Vsync -pg 1 -lvl 7 -x 1970 -y 620 -defaultsOSRD
+preplace port port-id_reset_led -pg 1 -lvl 7 -x 1970 -y 340 -defaultsOSRD
+preplace port port-id_reset2 -pg 1 -lvl 0 -x -200 -y 130 -defaultsOSRD
+preplace port port-id_reset2_led -pg 1 -lvl 0 -x -200 -y 160 -defaultsOSRD -left
+preplace portBus vgaRed -pg 1 -lvl 7 -x 1970 -y 500 -defaultsOSRD
+preplace portBus vgaGreen -pg 1 -lvl 7 -x 1970 -y 530 -defaultsOSRD
+preplace portBus vgaBlue -pg 1 -lvl 7 -x 1970 -y 560 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -200 -y 420 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x -200 -y 0 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 0 -x -200 -y 390 -defaultsOSRD -left
+preplace portBus seg -pg 1 -lvl 7 -x 1970 -y 840 -defaultsOSRD
+preplace portBus an -pg 1 -lvl 7 -x 1970 -y 800 -defaultsOSRD
+preplace portBus dp -pg 1 -lvl 7 -x 1970 -y 920 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 650 -y 660 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -x 1780 -y 270 -defaultsOSRD
+preplace inst VGA_output_0 -pg 1 -lvl 6 -x 1780 -y 540 -defaultsOSRD
+preplace inst memory_mapper_0 -pg 1 -lvl 3 -x 1080 -y 390 -defaultsOSRD
+preplace inst cell_array_ag_wraper_0 -pg 1 -lvl 3 -x 1080 -y 0 -defaultsOSRD
+preplace inst length_state_machine_0 -pg 1 -lvl 1 -x 320 -y 280 -defaultsOSRD -orient R180
+preplace inst apple_setter_0 -pg 1 -lvl 2 -x 650 -y 40 -defaultsOSRD
+preplace inst snake_increment_0 -pg 1 -lvl 2 -x 650 -y 260 -defaultsOSRD -orient R90
+preplace inst direction_decider_0 -pg 1 -lvl 1 -x 320 -y -20 -defaultsOSRD
+preplace inst seven_seg_driver_0 -pg 1 -lvl 6 -x 1780 -y 770 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 6 -x 1780 -y 920 -defaultsOSRD
+preplace netloc VGA_output_0_BLU 1 6 1 NJ 560
+preplace netloc VGA_output_0_GRN 1 6 1 1940J 530n
+preplace netloc VGA_output_0_HSYNC 1 0 7 170 60 490 -60 770 160 N 160 N 160 N 160 1950J
+preplace netloc VGA_output_0_RED 1 6 1 1920J 500n
+preplace netloc VGA_output_0_VSYNC 1 2 5 860 500 N 500 N 500 1640 410 1930J
+preplace netloc apple_setter_0_H_select 1 2 1 890 30n
+preplace netloc apple_setter_0_V_select 1 2 1 790 50n
+preplace netloc blk_mem_gen_0_douta 1 5 1 1660 300n
+preplace netloc btn_1 1 0 1 NJ 0
+preplace netloc cell_array_ag_wraper_0_LFSR_stop 1 1 3 540 130 790 150 1280
+preplace netloc cell_array_ag_wraper_0_ate_apple 1 1 3 510 140 N 140 1260
+preplace netloc cell_array_ag_wraper_0_selected_cell_state 1 2 2 890 170 1290J
+preplace netloc clk_wiz_0_clk_out1 1 2 4 870J 510 NJ 510 N 510 1630
+preplace netloc clk_wiz_0_locked 1 2 5 NJ 670 1290J 390 N 390 N 390 1910
+preplace netloc direction_decider_0_direction 1 1 2 500 -50 900J
+preplace netloc length_state_machine_0_remove_tail 1 0 3 170 70 510 -40 760
+preplace netloc memory_mapper_0_X_cell 1 2 2 900 270 1260J
+preplace netloc memory_mapper_0_Y_cell 1 2 2 880 280 1270J
+preplace netloc memory_mapper_0_adress 1 3 3 1280 260 N 260 N
+preplace netloc reset2_1 1 0 6 -180J 100 530J 390N 850 720 N 720 N 720 N
+preplace netloc reset_1 1 0 6 N 90 500 400 880J 520 N 520 N 520 N
+preplace netloc snake_increment_0_update_clk 1 1 2 520 150N 780
+preplace netloc sw_1 1 0 2 -170 370 N
+preplace netloc sys_clock_1 1 0 2 NJ 550 470
+preplace netloc VGA_output_0_X_ahead 1 2 5 900 290 N 290 N 290 1570 400 1900
+preplace netloc VGA_output_0_Y_ahead 1 2 5 900 490 N 490 N 490 1650 420 1910
+preplace netloc seven_seg_driver_0_seg 1 6 1 1910 780n
+preplace netloc seven_seg_driver_0_an 1 6 1 1950 760n
+preplace netloc xlconstant_0_dout 1 6 1 N 920
+preplace cgraphic comment_1 place left 122 577 textcolor 4 linecolor 3
+preplace cgraphic comment_0 place bot 452 -179 textcolor 4 linecolor 3 linewidth 2
+levelinfo -pg 1 -200 320 650 1080 1380 1550 1780 1970
+pagesize -pg 1 -db -bbox -sgen -320 -410 2160 980
+",
+   "linecolor_comment_0":"",
+   "linktoobj_comment_1":"",
+   "linktotype_comment_1":"bd_design",
+   "textcolor_comment_0":""
+}
+{
+   """"""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""":"3",
+   """"""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""":"3",
+   """"""""""""""""""""""da_board_cnt"""""""""""""""""""""":"1",
+   """"""da_clkrst_cnt"""""":"1",
+   """da_board_cnt""":"1"
+}
+{
+   "/comment_0":"comment_0",
+   "/comment_1":"comment_1"
+}

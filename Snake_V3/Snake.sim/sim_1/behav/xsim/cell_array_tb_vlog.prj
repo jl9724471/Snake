@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../VGA.srcs/sources_1/bd/display_block/ipshared/c923" \
+"../../../../VGA.srcs/sources_1/new/apple_setter.v" \
+"../../../../VGA.srcs/sources_1/new/cell.v" \
+"../../../../VGA.srcs/sim_1/new/cell_array_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

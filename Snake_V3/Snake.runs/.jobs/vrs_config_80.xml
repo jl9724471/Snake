@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="display_block_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="display_block_cell_array_ag_wraper_0_0_synth_1" LaunchDir="C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_cell_array_ag_wraper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="display_block_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="display_block_direction_decider_0_0_synth_1" LaunchDir="C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_direction_decider_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

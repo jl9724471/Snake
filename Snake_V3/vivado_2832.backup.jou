@@ -1,0 +1,483 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Mar  1 17:28:13 2025
+# Process ID         : 2832
+# Current directory  : C:/Users/jl972/Desktop/HDL/Snake_V2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent11040 C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.xpr
+# Log file           : C:/Users/jl972/Desktop/HDL/Snake_V2/vivado.log
+# Journal file       : C:/Users/jl972/Desktop/HDL/Snake_V2\vivado.jou
+# Running On         : JACKS_LAPTOP_4
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33832 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35979 MB
+# Available Virtual  : 24849 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd}
+create_bd_port -dir O -from 7 -to 0 JC
+connect_bd_net [get_bd_ports JC] [get_bd_pins clk_wiz_0/clk_out1]
+set_property location {2 237 278} [get_bd_cells length_state_machine_0]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+set_property location {-243 406} [get_bd_ports sw]
+set_property location {-236 391} [get_bd_ports led]
+set_property location {1630 156} [get_bd_ports JC]
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_ports JC]
+connect_bd_net [get_bd_ports JC] [get_bd_pins snake_increment_0/update_clk]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+disconnect_bd_net /snake_increment_0_update_clk [get_bd_ports JC]
+connect_bd_net [get_bd_ports JC] [get_bd_pins VGA_output_0/HSYNC]
+save_bd_design
+create_bd_port -dir O -from 7 -to 0 JB
+save_bd_design
+connect_bd_net [get_bd_ports JB] [get_bd_ports sw]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd}
+update_module_reference [get_ips  display_block_snake_increment_0_0]
+generate_target all [get_files  C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd]
+export_ip_user_files -of_objects [get_files C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd]
+launch_runs display_block_snake_increment_0_0_synth_1 -jobs 22
+wait_on_run display_block_snake_increment_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/modelsim} {questa=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/questa} {riviera=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/riviera} {activehdl=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd] -directory C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files -ipstatic_source_dir C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+reset_run display_block_snake_increment_0_0_synth_1
+disconnect_bd_net /VGA_output_0_HSYNC [get_bd_pins direction_decider_0/clk]
+connect_bd_net [get_bd_pins direction_decider_0/clk] [get_bd_pins snake_increment_0/Vsync]
+connect_bd_net [get_bd_pins snake_increment_0/Vsync] [get_bd_pins VGA_output_0/VSYNC]
+disconnect_bd_net /VGA_output_0_HSYNC [get_bd_ports JC]
+connect_bd_net [get_bd_ports JC] [get_bd_pins VGA_output_0/VSYNC]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+reset_run synth_1
+reset_run display_block_snake_increment_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+report_ip_status -name ip_status 
+update_module_reference [get_ips  display_block_snake_increment_0_0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+disconnect_bd_net /sw_1 [get_bd_ports JB]
+disconnect_bd_net /VGA_output_0_VSYNC [get_bd_ports JC]
+connect_bd_net [get_bd_ports JC] [get_bd_pins memory_mapper_0/address]
+connect_bd_net [get_bd_ports JB] [get_bd_pins blk_mem_gen_0/douta]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+disconnect_bd_net /memory_mapper_0_adress [get_bd_ports JC]
+undo
+delete_bd_objs [get_bd_ports JC]
+delete_bd_objs [get_bd_ports JB]
+create_bd_port -dir O -from 13 -to 0 testing_output
+connect_bd_net [get_bd_ports testing_output] [get_bd_pins memory_mapper_0/address]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+close [ open C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/constrs_1/new/Basys3_Master_v2.xdc w ]
+add_files -fileset constrs_1 C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/constrs_1/new/Basys3_Master_v2.xdc
+set_property is_enabled false [get_files  C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/constrs_1/new/Basys3_Master.xdc]
+set_property target_constrs_file C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/constrs_1/new/Basys3_Master_v2.xdc [current_fileset -constrset]
+delete_bd_objs [get_bd_ports testing_output]
+create_bd_port -dir O -from 11 -to 0 JB
+create_bd_port -dir O -from 11 -to 0 JC
+connect_bd_net [get_bd_ports JB] [get_bd_pins memory_mapper_0/address]
+set_property location {2020 272} [get_bd_ports JC]
+connect_bd_net [get_bd_ports JC] [get_bd_pins blk_mem_gen_0/douta]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+disconnect_bd_net /blk_mem_gen_0_douta [get_bd_ports JC]
+disconnect_bd_net /memory_mapper_0_adress [get_bd_ports JB]
+connect_bd_net [get_bd_ports JB] [get_bd_pins memory_mapper_0/X_cell]
+connect_bd_net [get_bd_ports JC] [get_bd_pins memory_mapper_0/Y_cell]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+disconnect_bd_net /memory_mapper_0_X_cell [get_bd_ports JB]
+disconnect_bd_net /memory_mapper_0_Y_cell [get_bd_ports JC]
+connect_bd_net [get_bd_ports JB] [get_bd_pins VGA_output_0/X]
+connect_bd_net [get_bd_ports JC] [get_bd_pins VGA_output_0/Y]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+disconnect_bd_net /VGA_output_0_X [get_bd_ports JB]
+disconnect_bd_net /VGA_output_0_Y [get_bd_ports JC]
+connect_bd_net [get_bd_ports JB] [get_bd_pins memory_mapper_0/address]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  display_block_memory_mapper_0_0]
+connect_bd_net [get_bd_ports JC] [get_bd_pins blk_mem_gen_0/douta]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_run impl_1
+report_ip_status -name ip_status 
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+update_module_reference [get_ips  {display_block_memory_mapper_0_0 display_block_VGA_output_0_1}]
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd]
+set_property synth_checkpoint_mode None [get_files  C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd]
+generate_target all [get_files  C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+undo
+report_ip_status -name ip_status 
+update_module_reference [get_ips  display_block_VGA_output_0_1]
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+startgroup
+set_property -dict [list \
+  CONFIG.Register_PortA_Output_of_Memory_Core {true} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+] [get_bd_cells blk_mem_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+create_bd_port -dir I reset2
+disconnect_bd_net /reset_1 [get_bd_pins cell_array_ag_wraper_0/reset]
+disconnect_bd_net /reset_1 [get_bd_pins apple_setter_0/reset]
+connect_bd_net [get_bd_ports reset2] [get_bd_pins cell_array_ag_wraper_0/reset]
+connect_bd_net [get_bd_ports reset2] [get_bd_pins apple_setter_0/reset]
+disconnect_bd_net /reset_1 [get_bd_pins snake_increment_0/reset]
+connect_bd_net [get_bd_ports reset2] [get_bd_pins snake_increment_0/reset]
+disconnect_bd_net /reset_1 [get_bd_pins length_state_machine_0/reset]
+connect_bd_net [get_bd_ports reset2] [get_bd_pins length_state_machine_0/reset]
+disconnect_bd_net /reset_1 [get_bd_pins direction_decider_0/reset]
+connect_bd_net [get_bd_ports reset2] [get_bd_pins direction_decider_0/reset]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+create_bd_port -dir O reset2_led
+set_property location {-403 164} [get_bd_ports reset2_led]
+connect_bd_net [get_bd_ports reset2_led] [get_bd_ports reset2]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+report_ip_status -name ip_status 
+update_module_reference [get_ips  display_block_VGA_output_0_1]
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+report_ip_status -name ip_status 
+update_module_reference [get_ips  display_block_snake_increment_0_0]
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {display_block_memory_mapper_0_0 display_block_direction_decider_0_0}]
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  display_block_memory_mapper_0_0]
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+delete_bd_objs [get_bd_cells proc_sys_reset_0]
+undo
+undo
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {display_block_memory_mapper_0_0 display_block_direction_decider_0_0}]
+generate_target all [get_files  C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd]
+export_ip_user_files -of_objects [get_files C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd] -no_script -sync -force -quiet
+export_simulation -lib_map_path [list {modelsim=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/modelsim} {questa=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/questa} {riviera=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/riviera} {activehdl=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd] -directory C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files -ipstatic_source_dir C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+disconnect_bd_net /VGA_output_0_VSYNC [get_bd_pins apple_setter_0/clk]
+connect_bd_net [get_bd_pins apple_setter_0/clk] [get_bd_pins VGA_output_0/HSYNC]
+set_property location {1987 640} [get_bd_ports Hsync]
+set_property location {1986 623} [get_bd_ports Hsync]
+undo
+undo
+undo
+undo
+redo
+redo
+redo
+redo
+set_property location {1994 595} [get_bd_ports Hsync]
+undo
+set_property location {2005 590} [get_bd_ports Hsync]
+set_property location {1991 631} [get_bd_ports Vsync]
+set_property location {1999 623} [get_bd_ports Vsync]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  display_block_snake_increment_0_0]
+report_ip_status -name ip_status 
+disconnect_bd_net /VGA_output_0_VSYNC [get_bd_pins direction_decider_0/clk]
+connect_bd_net [get_bd_pins direction_decider_0/clk] [get_bd_pins VGA_output_0/HSYNC]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+synth_design -top display_block_wrapper -part xc7a35tcpg236-1 -lint 
+close_hw_manager

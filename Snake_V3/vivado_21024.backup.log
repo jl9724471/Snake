@@ -1,0 +1,564 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Feb 26 16:40:30 2025
+# Process ID         : 21024
+# Current directory  : C:/Users/jl972/Desktop/HDL/Snake_V2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent5048 C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.xpr
+# Log file           : C:/Users/jl972/Desktop/HDL/Snake_V2/vivado.log
+# Journal file       : C:/Users/jl972/Desktop/HDL/Snake_V2\vivado.jou
+# Running On         : JACKS_LAPTOP_4
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33832 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35979 MB
+# Available Virtual  : 26772 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/jl972/Desktop/HDL/Snake' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'display_block.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+display_block_clk_wiz_0_0
+display_block_blk_mem_gen_0_0
+
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1193.496 ; gain = 105.562
+upgrade_project -migrate_output_products
+WARNING: [IP_Flow 19-2162] IP 'display_block_clk_wiz_0_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'display_block_clk_wiz_0_0' (customized with software release 2019.1) has a different revision in the IP Catalog. * This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:basys3:part0:1.2' used to customize the IP 'display_block_clk_wiz_0_0' do not match.
+INFO: [BD 41-2710] Migrated 'display_block_clk_wiz_0_0.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_clk_wiz_0_0'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_clk_wiz_0_0'.
+INFO: [BD 41-2710] Migrated 'display_block_VGA_output_0_1.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_VGA_output_0_1'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_VGA_output_0_1'.
+CRITICAL WARNING: [IP_Flow 19-4309] IP 'display_block_blk_mem_gen_0_0' is locked, parameter file paths could not be changed. Please ensure the IP is unlocked and retry the SaveAs/Import operation.
+WARNING: [IP_Flow 19-2162] IP 'display_block_blk_mem_gen_0_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'display_block_blk_mem_gen_0_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+INFO: [BD 41-2710] Migrated 'display_block_blk_mem_gen_0_0.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_blk_mem_gen_0_0'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_blk_mem_gen_0_0'.
+INFO: [BD 41-2710] Migrated 'display_block_memory_mapper_0_0.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_memory_mapper_0_0'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_memory_mapper_0_0'.
+WARNING: [IP_Flow 19-3571] IP 'display_block_cell_array_ag_wraper_0_0' is restricted:
+* Detected changes to module reference file(s).
+INFO: [BD 41-2710] Migrated 'display_block_cell_array_ag_wraper_0_0.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_cell_array_ag_wraper_0_0'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_cell_array_ag_wraper_0_0'.
+INFO: [BD 41-2710] Migrated 'display_block_length_state_machine_0_0.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_length_state_machine_0_0'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_length_state_machine_0_0'.
+INFO: [BD 41-2710] Migrated 'display_block_apple_setter_0_0.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_apple_setter_0_0'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_apple_setter_0_0'.
+INFO: [BD 41-2710] Migrated 'display_block_snake_increment_0_0.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_snake_increment_0_0'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_snake_increment_0_0'.
+WARNING: [IP_Flow 19-3571] IP 'display_block_direction_decider_0_0' is restricted:
+* Detected changes to module reference file(s).
+INFO: [BD 41-2710] Migrated 'display_block_direction_decider_0_0.xci'
+  Source files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ip/display_block_direction_decider_0_0'
+  Output files are located in 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/ip/display_block_direction_decider_0_0'.
+upgrade_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1193.496 ; gain = 0.000
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {display_block_clk_wiz_0_0 display_block_blk_mem_gen_0_0}] -log ip_upgrade.log
+Reading block design file <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:module_ref:VGA_output:1.0 - VGA_output_0
+Adding component instance block -- xilinx.com:module_ref:memory_mapper:1.0 - memory_mapper_0
+Adding component instance block -- xilinx.com:module_ref:cell_array_ag_wraper:1.0 - cell_array_ag_wraper_0
+Adding component instance block -- xilinx.com:module_ref:length_state_machine:1.0 - length_state_machine_0
+Adding component instance block -- xilinx.com:module_ref:apple_setter:1.0 - apple_setter_0
+Adding component instance block -- xilinx.com:module_ref:snake_increment:1.0 - snake_increment_0
+Adding component instance block -- xilinx.com:module_ref:direction_decider:1.0 - direction_decider_0
+Successfully read diagram <display_block> from block design file <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd>
+Upgrading 'C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jl972/Desktop/HDL/Snake/Snake.srcs/images/memory_config_all_ordered.COE' provided. It will be converted relative to IP Instance files '../../../../../../../Snake/Snake.srcs/images/memory_config_all_ordered.COE'
+INFO: [IP_Flow 19-3422] Upgraded display_block_blk_mem_gen_0_0 (Block Memory Generator 8.4) from revision 3 to revision 9
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3438] Customization errors found on 'display_block_clk_wiz_0_0'. Restoring to previous valid configuration.
+WARNING: [IP_Flow 19-1721] During upgrade of 'display_block_clk_wiz_0_0':
+The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+CRITICAL WARNING: [IP_Flow 19-3421] Upgrade of 'display_block_clk_wiz_0_0' (Clocking Wizard 6.0) from revision 3 to revision 15 has resulted in an incomplete parameterization. Please review the message log, and recustomize this instance before continuing with your design.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'resetn'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reset'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'display_block_clk_wiz_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'resetn' is not found on the upgraded version of the cell '/clk_wiz_0'. Its connection to the net 'reset_1' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'display_block_clk_wiz_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/jl972/Desktop/HDL/Snake_V2/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/jl972/Desktop/HDL/Snake_V2/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1465.762 ; gain = 260.977
+export_ip_user_files -of_objects [get_ips {display_block_clk_wiz_0_0 display_block_blk_mem_gen_0_0}] -no_script -sync -force -quiet
+update_module_reference [get_ips  {display_block_cell_array_ag_wraper_0_0 display_block_direction_decider_0_0}]
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'GRID_SIZE_H_w' by 8 for port or parameter 'apple_try_set_H'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'GRID_SIZE_H_w' by 8 for port or parameter 'apple_try_set_H'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'GRID_SIZE_V_w' by 8 for port or parameter 'apple_try_set_V'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'GRID_SIZE_V_w' by 8 for port or parameter 'apple_try_set_V'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'update_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-5661] Bus Interface 'update_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'update_clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'GRID_SIZE_H_w' by 8 for port or parameter 'apple_try_set_H'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'GRID_SIZE_H_w' by 8 for port or parameter 'apple_try_set_H'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'GRID_SIZE_V_w' by 8 for port or parameter 'apple_try_set_V'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'GRID_SIZE_V_w' by 8 for port or parameter 'apple_try_set_V'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'update_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-5661] Bus Interface 'update_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'update_clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd'
+INFO: [IP_Flow 19-3420] Updated display_block_cell_array_ag_wraper_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated display_block_direction_decider_0_0 to use current project options
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+generate_target all [get_files  C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd]
+CRITICAL WARNING: [BD 41-1348] Reset pin /length_state_machine_0/reset (associated clock /length_state_machine_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+CRITICAL WARNING: [BD 41-1348] Reset pin /apple_setter_0/reset (associated clock /apple_setter_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /VGA_output_0/VSYNC.
+CRITICAL WARNING: [BD 41-1348] Reset pin /snake_increment_0/reset (associated clock /snake_increment_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/sim/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hdl/display_block_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_output_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_mapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cell_array_ag_wraper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block length_state_machine_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block apple_setter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block snake_increment_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block direction_decider_0 .
+Exporting to file c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hw_handoff/display_block.hwh
+Generated Hardware Definition File c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.hwdef
+catch { config_ip_cache -export [get_ips -all display_block_clk_wiz_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: display_block_clk_wiz_0_0
+catch { config_ip_cache -export [get_ips -all display_block_blk_mem_gen_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: display_block_blk_mem_gen_0_0
+export_ip_user_files -of_objects [get_files C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd]
+launch_runs display_block_blk_mem_gen_0_0_synth_1 display_block_cell_array_ag_wraper_0_0_synth_1 display_block_clk_wiz_0_0_synth_1 display_block_direction_decider_0_0_synth_1 -jobs 11
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: display_block_blk_mem_gen_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: display_block_clk_wiz_0_0
+[Wed Feb 26 16:42:36 2025] Launched display_block_blk_mem_gen_0_0_synth_1, display_block_cell_array_ag_wraper_0_0_synth_1, display_block_clk_wiz_0_0_synth_1, display_block_direction_decider_0_0_synth_1...
+Run output will be captured here:
+display_block_blk_mem_gen_0_0_synth_1: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_blk_mem_gen_0_0_synth_1/runme.log
+display_block_cell_array_ag_wraper_0_0_synth_1: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_cell_array_ag_wraper_0_0_synth_1/runme.log
+display_block_clk_wiz_0_0_synth_1: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_clk_wiz_0_0_synth_1/runme.log
+display_block_direction_decider_0_0_synth_1: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_direction_decider_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/modelsim} {questa=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/questa} {riviera=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/riviera} {activehdl=C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/display_block.bd] -directory C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files -ipstatic_source_dir C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Wed Feb 26 16:43:37 2025] Launched synth_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/synth_1/runme.log
+[Wed Feb 26 16:43:37 2025] Launched impl_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1518.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1592.773 ; gain = 0.285
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2129.797 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2129.797 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2129.797 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2129.797 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2129.797 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2129.797 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2129.797 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2129.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2467.574 ; gain = 954.172
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Wed Feb 26 16:55:31 2025] Launched synth_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/synth_1/runme.log
+[Wed Feb 26 16:55:31 2025] Launched impl_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/runme.log
+close_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-05:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2499.211 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B7B105A
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz_0/reset]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl_0
+INFO: [BoardRule 102-15] connect_bd_net /reset_rtl_0 /clk_wiz_0/reset
+INFO: [BoardRule 102-19] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl_0
+save_bd_design
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+create_bd_port -dir O -from 3 -to 0 LED
+delete_bd_objs [get_bd_ports LED]
+create_bd_port -dir O -from 2 -to 0 LED
+set_property location {2013 612} [get_bd_ports LED]
+set_property location {-358 321} [get_bd_ports LED]
+connect_bd_net [get_bd_ports LED] [get_bd_ports sw]
+save_bd_design
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+CRITICAL WARNING: [BD 41-1348] Reset pin /length_state_machine_0/reset (associated clock /length_state_machine_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+CRITICAL WARNING: [BD 41-1348] Reset pin /apple_setter_0/reset (associated clock /apple_setter_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /VGA_output_0/VSYNC.
+CRITICAL WARNING: [BD 41-1348] Reset pin /snake_increment_0/reset (associated clock /snake_increment_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/sim/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hdl/display_block_wrapper.v
+Exporting to file c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hw_handoff/display_block.hwh
+Generated Hardware Definition File c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.hwdef
+[Thu Feb 27 13:04:20 2025] Launched synth_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/synth_1/runme.log
+[Thu Feb 27 13:04:20 2025] Launched impl_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2499.211 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2499.211 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2555.145 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2555.145 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 2555.145 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2555.145 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2555.145 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 2555.145 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 2555.145 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2555.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2644.992 ; gain = 145.781
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+close_design
+delete_bd_objs [get_bd_ports LED]
+create_bd_port -dir I -from 2 -to 0 led
+undo
+INFO: [Common 17-17] undo 'create_bd_port -dir I -from 2 -to 0 led'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_ports LED]'
+redo
+INFO: [Common 17-16] redo 'delete_bd_objs [get_bd_ports LED]'
+create_bd_port -dir O -from 2 -to 0 led
+set_property location {-250 328} [get_bd_ports led]
+set_property location {-196 330} [get_bd_ports led]
+connect_bd_net [get_bd_ports led] [get_bd_ports sw]
+save_bd_design
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+set_property location {1989 358} [get_bd_ports Hsync]
+set_property location {1994 267} [get_bd_ports reset_led]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+CRITICAL WARNING: [BD 41-1348] Reset pin /length_state_machine_0/reset (associated clock /length_state_machine_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+CRITICAL WARNING: [BD 41-1348] Reset pin /apple_setter_0/reset (associated clock /apple_setter_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /VGA_output_0/VSYNC.
+CRITICAL WARNING: [BD 41-1348] Reset pin /snake_increment_0/reset (associated clock /snake_increment_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/sim/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hdl/display_block_wrapper.v
+Exporting to file c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hw_handoff/display_block.hwh
+Generated Hardware Definition File c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.hwdef
+[Thu Feb 27 13:14:57 2025] Launched synth_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/synth_1/runme.log
+[Thu Feb 27 13:14:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+startgroup
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {498.922} \
+  CONFIG.CLKOUT1_PHASE_ERROR {578.639} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {85.86} \
+  CONFIG.CLKOUT1_REQUESTED_PHASE {6} \
+  CONFIG.JITTER_SEL {Min_O_Jitter} \
+  CONFIG.MMCM_BANDWIDTH {HIGH} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {52.375} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.625} \
+  CONFIG.MMCM_CLKOUT0_PHASE {5.902} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {8} \
+] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+startgroup
+set_property -dict [list \
+  CONFIG.RESET_PORT {resetn} \
+  CONFIG.RESET_TYPE {ACTIVE_LOW} \
+] [get_bd_cells clk_wiz_0]
+WARNING: [BD 41-1684] Pin /clk_wiz_0/reset is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets reset_rtl_0_1]
+endgroup
+delete_bd_objs [get_bd_ports reset_rtl_0]
+connect_bd_net [get_bd_ports reset] [get_bd_pins clk_wiz_0/resetn]
+disconnect_bd_net /clk_wiz_0_locked [get_bd_pins direction_decider_0/reset]
+connect_bd_net [get_bd_ports reset] [get_bd_pins direction_decider_0/reset]
+disconnect_bd_net /clk_wiz_0_locked [get_bd_pins memory_mapper_0/reset]
+connect_bd_net [get_bd_ports reset] [get_bd_pins memory_mapper_0/reset]
+disconnect_bd_net /clk_wiz_0_locked [get_bd_pins VGA_output_0/reset]
+connect_bd_net [get_bd_ports reset] [get_bd_pins VGA_output_0/reset]
+save_bd_design
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+reset_run display_block_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+CRITICAL WARNING: [BD 41-1348] Reset pin /VGA_output_0/reset (associated clock /VGA_output_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /memory_mapper_0/reset (associated clock /memory_mapper_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /length_state_machine_0/reset (associated clock /length_state_machine_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+CRITICAL WARNING: [BD 41-1348] Reset pin /apple_setter_0/reset (associated clock /apple_setter_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /VGA_output_0/VSYNC.
+CRITICAL WARNING: [BD 41-1348] Reset pin /snake_increment_0/reset (associated clock /snake_increment_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+CRITICAL WARNING: [BD 41-1348] Reset pin /direction_decider_0/reset (associated clock /direction_decider_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /VGA_output_0/HSYNC.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/sim/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hdl/display_block_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hw_handoff/display_block.hwh
+Generated Hardware Definition File c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: display_block_clk_wiz_0_0
+[Thu Feb 27 13:29:44 2025] Launched display_block_clk_wiz_0_0_synth_1, synth_1...
+Run output will be captured here:
+display_block_clk_wiz_0_0_synth_1: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_clk_wiz_0_0_synth_1/runme.log
+synth_1: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/synth_1/runme.log
+[Thu Feb 27 13:29:44 2025] Launched impl_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2687.113 ; gain = 0.000
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-05:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2687.113 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B7B105A
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list \
+  CONFIG.Coe_File {c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/images/memory_config_all_ordered.COE} \
+  CONFIG.Fill_Remaining_Memory_Locations {true} \
+] [get_bd_cells blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/images/memory_config_all_ordered.COE' provided. It will be converted relative to IP Instance files '../../../../../images/memory_config_all_ordered.COE'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/images/memory_config_all_ordered.COE' provided. It will be converted relative to IP Instance files '../../../../../images/memory_config_all_ordered.COE'
+endgroup
+save_bd_design
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Wrote  : <C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.srcs/sources_1/bd/display_block/ui/bd_e47ce8d0.ui> 
+reset_run synth_1
+reset_run display_block_blk_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+CRITICAL WARNING: [BD 41-1348] Reset pin /VGA_output_0/reset (associated clock /VGA_output_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /memory_mapper_0/reset (associated clock /memory_mapper_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /length_state_machine_0/reset (associated clock /length_state_machine_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+CRITICAL WARNING: [BD 41-1348] Reset pin /apple_setter_0/reset (associated clock /apple_setter_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /VGA_output_0/VSYNC.
+CRITICAL WARNING: [BD 41-1348] Reset pin /snake_increment_0/reset (associated clock /snake_increment_0/update_clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /snake_increment_0/update_clk.
+CRITICAL WARNING: [BD 41-1348] Reset pin /direction_decider_0/reset (associated clock /direction_decider_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /VGA_output_0/HSYNC.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\jl972\Desktop\HDL\Snake_V2\Snake.srcs\sources_1\bd\display_block\display_block.bd> 
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/sim/display_block.v
+Verilog Output written to : c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hdl/display_block_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/hw_handoff/display_block.hwh
+Generated Hardware Definition File c:/Users/jl972/Desktop/HDL/Snake_V2/Snake.gen/sources_1/bd/display_block/synth/display_block.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: display_block_blk_mem_gen_0_0
+[Thu Feb 27 13:41:36 2025] Launched display_block_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+display_block_blk_mem_gen_0_0_synth_1: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/display_block_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/synth_1/runme.log
+[Thu Feb 27 13:41:36 2025] Launched impl_1...
+Run output will be captured here: C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-05:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2687.113 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B7B105A
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jl972/Desktop/HDL/Snake_V2/Snake.runs/impl_1/display_block_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 28 17:04:39 2025...

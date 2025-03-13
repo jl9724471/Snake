@@ -1,0 +1,1023 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD587B93F1260A916",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Snake.gen/sources_1/bd/display_block",
+      "name": "display_block",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "blk_mem_gen_0": "",
+      "VGA_output_0": "",
+      "memory_mapper_0": "",
+      "cell_array_ag_wraper_0": "",
+      "length_state_machine_0": "",
+      "apple_setter_0": "",
+      "snake_increment_0": "",
+      "direction_decider_0": "",
+      "seven_seg_driver_0": "",
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "Hsync": {
+        "direction": "O"
+      },
+      "Vsync": {
+        "direction": "O"
+      },
+      "vgaRed": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "vgaGreen": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "vgaBlue": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "reset_led": {
+        "direction": "O"
+      },
+      "btn": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "reset2": {
+        "direction": "I"
+      },
+      "reset2_led": {
+        "direction": "O"
+      },
+      "seg": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "dp": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "15",
+        "xci_name": "display_block_clk_wiz_0_0",
+        "xci_path": "ip\\display_block_clk_wiz_0_0\\display_block_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "498.922"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "578.639"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "85.86"
+          },
+          "CLKOUT1_REQUESTED_PHASE": {
+            "value": "6"
+          },
+          "JITTER_SEL": {
+            "value": "Min_O_Jitter"
+          },
+          "MMCM_BANDWIDTH": {
+            "value": "HIGH"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "52.375"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "7.625"
+          },
+          "MMCM_CLKOUT0_PHASE": {
+            "value": "5.902"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "8"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "9",
+        "xci_name": "display_block_blk_mem_gen_0_0",
+        "xci_path": "ip\\display_block_blk_mem_gen_0_0\\display_block_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Algorithm": {
+            "value": "Minimum_Area"
+          },
+          "Coe_File": {
+            "value": "../../../../../images/memory_config_all_ordered.COE"
+          },
+          "Disable_Collision_Warnings": {
+            "value": "false"
+          },
+          "Disable_Out_of_Range_Warnings": {
+            "value": "false"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Port_A_Write_Rate": {
+            "value": "0"
+          },
+          "Register_PortA_Output_of_Memory_Core": {
+            "value": "true"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_REGCEA_Pin": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "4032"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "VGA_output_0": {
+        "vlnv": "xilinx.com:module_ref:VGA_output:1.0",
+        "ip_revision": "1",
+        "xci_name": "display_block_VGA_output_0_1",
+        "xci_path": "ip\\display_block_VGA_output_0_1\\display_block_VGA_output_0_1.xci",
+        "inst_hier_path": "VGA_output_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VGA_output",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "85860655",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "6.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "colour": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "X": {
+            "direction": "O",
+            "left": "10",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "RED": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "GRN": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "BLU": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "HSYNC": {
+            "direction": "O",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "VSYNC": {
+            "direction": "O",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          }
+        }
+      },
+      "memory_mapper_0": {
+        "vlnv": "xilinx.com:module_ref:memory_mapper:1.0",
+        "ip_revision": "1",
+        "xci_name": "display_block_memory_mapper_0_0",
+        "xci_path": "ip\\display_block_memory_mapper_0_0\\display_block_memory_mapper_0_0.xci",
+        "inst_hier_path": "memory_mapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "memory_mapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "85860655",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "6.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "X": {
+            "direction": "I",
+            "left": "10",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "X_cell": {
+            "direction": "O",
+            "left": "2",
+            "right": "0",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Y_cell": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "cell_state": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "memory_address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "cell_array_ag_wraper_0": {
+        "vlnv": "xilinx.com:module_ref:cell_array_ag_wraper:1.0",
+        "ip_revision": "1",
+        "xci_name": "display_block_cell_array_ag_wraper_0_0",
+        "xci_path": "ip\\display_block_cell_array_ag_wraper_0_0\\display_block_cell_array_ag_wraper_0_0.xci",
+        "inst_hier_path": "cell_array_ag_wraper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "cell_array_ag_wraper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "update_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "player_direction": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "X_cell": {
+            "direction": "I",
+            "left": "2",
+            "right": "0",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Y_cell": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "selected_cell_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "apple_try_set_H": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "apple_try_set_V": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "LFSR_stop": {
+            "direction": "O",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "remove_tail": {
+            "direction": "I"
+          },
+          "ate_apple": {
+            "direction": "O"
+          }
+        }
+      },
+      "length_state_machine_0": {
+        "vlnv": "xilinx.com:module_ref:length_state_machine:1.0",
+        "ip_revision": "1",
+        "xci_name": "display_block_length_state_machine_0_0",
+        "xci_path": "ip\\display_block_length_state_machine_0_0\\display_block_length_state_machine_0_0.xci",
+        "inst_hier_path": "length_state_machine_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "length_state_machine",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "update_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ate_apple": {
+            "direction": "I"
+          },
+          "remove_tail": {
+            "direction": "O"
+          }
+        }
+      },
+      "apple_setter_0": {
+        "vlnv": "xilinx.com:module_ref:apple_setter:1.0",
+        "ip_revision": "1",
+        "xci_name": "display_block_apple_setter_0_0",
+        "xci_path": "ip\\display_block_apple_setter_0_0\\display_block_apple_setter_0_0.xci",
+        "inst_hier_path": "apple_setter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "apple_setter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "stop": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "H_select": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "V_select": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "snake_increment_0": {
+        "vlnv": "xilinx.com:module_ref:snake_increment:1.0",
+        "ip_revision": "1",
+        "xci_name": "display_block_snake_increment_0_0",
+        "xci_path": "ip\\display_block_snake_increment_0_0\\display_block_snake_increment_0_0.xci",
+        "inst_hier_path": "snake_increment_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "snake_increment",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Vsync": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "divisor": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "update_clk": {
+            "type": "clk",
+            "direction": "O",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          }
+        }
+      },
+      "direction_decider_0": {
+        "vlnv": "xilinx.com:module_ref:direction_decider:1.0",
+        "ip_revision": "1",
+        "xci_name": "display_block_direction_decider_0_0",
+        "xci_path": "ip\\display_block_direction_decider_0_0\\display_block_direction_decider_0_0.xci",
+        "inst_hier_path": "direction_decider_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "direction_decider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "switch_array": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "direction": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "seven_seg_driver_0": {
+        "vlnv": "xilinx.com:module_ref:seven_seg_driver:1.0",
+        "ip_revision": "1",
+        "xci_name": "display_block_seven_seg_driver_0_0",
+        "xci_path": "ip\\display_block_seven_seg_driver_0_0\\display_block_seven_seg_driver_0_0.xci",
+        "inst_hier_path": "seven_seg_driver_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "seven_seg_driver",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "display_block_snake_increment_0_0_update_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "A": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "C": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "D": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "seg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "display_block_xlconstant_0_0",
+        "xci_path": "ip\\display_block_xlconstant_0_0\\display_block_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "VGA_output_0_BLU": {
+        "ports": [
+          "VGA_output_0/BLU",
+          "vgaBlue"
+        ]
+      },
+      "VGA_output_0_GRN": {
+        "ports": [
+          "VGA_output_0/GRN",
+          "vgaGreen"
+        ]
+      },
+      "VGA_output_0_HSYNC": {
+        "ports": [
+          "VGA_output_0/HSYNC",
+          "Hsync",
+          "direction_decider_0/clk",
+          "apple_setter_0/clk"
+        ]
+      },
+      "VGA_output_0_RED": {
+        "ports": [
+          "VGA_output_0/RED",
+          "vgaRed"
+        ]
+      },
+      "VGA_output_0_VSYNC": {
+        "ports": [
+          "VGA_output_0/VSYNC",
+          "Vsync",
+          "cell_array_ag_wraper_0/clk",
+          "snake_increment_0/Vsync",
+          "seven_seg_driver_0/clk"
+        ]
+      },
+      "VGA_output_0_X_ahead": {
+        "ports": [
+          "VGA_output_0/X",
+          "memory_mapper_0/X"
+        ]
+      },
+      "VGA_output_0_Y_ahead": {
+        "ports": [
+          "VGA_output_0/Y",
+          "memory_mapper_0/Y"
+        ]
+      },
+      "apple_setter_0_H_select": {
+        "ports": [
+          "apple_setter_0/H_select",
+          "cell_array_ag_wraper_0/apple_try_set_H"
+        ]
+      },
+      "apple_setter_0_V_select": {
+        "ports": [
+          "apple_setter_0/V_select",
+          "cell_array_ag_wraper_0/apple_try_set_V"
+        ]
+      },
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "VGA_output_0/colour"
+        ]
+      },
+      "btn_1": {
+        "ports": [
+          "btn",
+          "direction_decider_0/switch_array"
+        ]
+      },
+      "cell_array_ag_wraper_0_LFSR_stop": {
+        "ports": [
+          "cell_array_ag_wraper_0/LFSR_stop",
+          "apple_setter_0/stop"
+        ]
+      },
+      "cell_array_ag_wraper_0_ate_apple": {
+        "ports": [
+          "cell_array_ag_wraper_0/ate_apple",
+          "length_state_machine_0/ate_apple"
+        ]
+      },
+      "cell_array_ag_wraper_0_selected_cell_state": {
+        "ports": [
+          "cell_array_ag_wraper_0/selected_cell_state",
+          "memory_mapper_0/cell_state"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "blk_mem_gen_0/clka",
+          "VGA_output_0/clk",
+          "memory_mapper_0/clk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "reset_led"
+        ]
+      },
+      "direction_decider_0_direction": {
+        "ports": [
+          "direction_decider_0/direction",
+          "cell_array_ag_wraper_0/player_direction"
+        ]
+      },
+      "length_state_machine_0_remove_tail": {
+        "ports": [
+          "length_state_machine_0/remove_tail",
+          "cell_array_ag_wraper_0/remove_tail"
+        ]
+      },
+      "memory_mapper_0_X_cell": {
+        "ports": [
+          "memory_mapper_0/X_cell",
+          "cell_array_ag_wraper_0/X_cell"
+        ]
+      },
+      "memory_mapper_0_Y_cell": {
+        "ports": [
+          "memory_mapper_0/Y_cell",
+          "cell_array_ag_wraper_0/Y_cell"
+        ]
+      },
+      "memory_mapper_0_adress": {
+        "ports": [
+          "memory_mapper_0/memory_address",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "reset2_1": {
+        "ports": [
+          "reset2",
+          "cell_array_ag_wraper_0/reset",
+          "length_state_machine_0/reset",
+          "reset2_led",
+          "direction_decider_0/reset",
+          "snake_increment_0/reset",
+          "apple_setter_0/reset",
+          "seven_seg_driver_0/reset"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_wiz_0/resetn",
+          "VGA_output_0/reset",
+          "memory_mapper_0/reset"
+        ]
+      },
+      "seven_seg_driver_0_an": {
+        "ports": [
+          "seven_seg_driver_0/an",
+          "an"
+        ]
+      },
+      "seven_seg_driver_0_seg": {
+        "ports": [
+          "seven_seg_driver_0/seg",
+          "seg"
+        ]
+      },
+      "snake_increment_0_update_clk": {
+        "ports": [
+          "snake_increment_0/update_clk",
+          "length_state_machine_0/update_clk",
+          "cell_array_ag_wraper_0/update_clk"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "led",
+          "snake_increment_0/divisor"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "dp"
+        ]
+      }
+    },
+    "comments": {
+      "/": {
+        "comment_1": "changeing the switch input rapidaly can corrupt the memory\nnot a problem for the final design, but good to keep in mind",
+        "comment_0": "angle is set to get frequency just right"
+      }
+    }
+  }
+}

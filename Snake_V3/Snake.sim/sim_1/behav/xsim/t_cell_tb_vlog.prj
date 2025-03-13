@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../VGA.srcs/sources_1/bd/display_block/ipshared/c923" \
+"../../../../VGA.ip_user_files/bd/display_block/ip/display_block_clk_wiz_0_0/display_block_clk_wiz_0_0_clk_wiz.v" \
+"../../../../VGA.ip_user_files/bd/display_block/ip/display_block_clk_wiz_0_0/display_block_clk_wiz_0_0.v" \
+"../../../../VGA.ip_user_files/bd/display_block/ip/display_block_reset_inv_0_0/sim/display_block_reset_inv_0_0.v" \
+"../../../../VGA.ip_user_files/bd/display_block/ip/display_block_VGA_output_0_0/sim/display_block_VGA_output_0_0.v" \
+"../../../../VGA.ip_user_files/bd/display_block/ip/display_block_XY_ploter_0_0/sim/display_block_XY_ploter_0_0.v" \
+"../../../../VGA.srcs/sources_1/new/VGA_output.v" \
+"../../../../VGA.srcs/sources_1/new/XY_ploter.v" \
+"../../../../VGA.ip_user_files/bd/display_block/ip/display_block_xlconstant_0_0/sim/display_block_xlconstant_0_0.v" \
+"../../../../VGA.ip_user_files/bd/display_block/ip/display_block_xlconstant_1_0/sim/display_block_xlconstant_1_0.v" \
+"../../../../VGA.ip_user_files/bd/display_block/sim/display_block.v" \
+"../../../../VGA.srcs/sources_1/bd/display_block/hdl/display_block_wrapper.v" \
+"../../../../VGA.srcs/sources_1/new/test_patern.v" \
+"../../../../VGA.srcs/sources_1/new/cell.v" \
+"../../../../VGA.srcs/sim_1/new/t_cell_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

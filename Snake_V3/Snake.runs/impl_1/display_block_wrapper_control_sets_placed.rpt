@@ -1,0 +1,106 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar  3 14:40:13 2025
+| Host         : JACKS_LAPTOP_4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file display_block_wrapper_control_sets_placed.rpt
+| Design       : display_block_wrapper
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   141 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    28 |
+| >= 0 to < 4        |    16 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     7 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            5 |
+| No           | No                    | Yes                    |             316 |          196 |
+| No           | Yes                   | No                     |               4 |            4 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              47 |           16 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                                     Clock Signal                                     |                                   Enable Signal                                  |                                   Set/Reset Signal                                  | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/out_reg_LDC_i_1__2_n_0 |                                                                                  | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/out_reg_LDC_i_2__2_n_0 |                1 |              1 |         1.00 |
+| ~display_block_i/snake_increment_0/inst/update_clk_BUFG                              |                                                                                  | display_block_i/length_state_machine_0/inst/internal_state[1]_i_3_n_0               |                1 |              1 |         1.00 |
+| ~display_block_i/snake_increment_0/inst/update_clk_BUFG                              | display_block_i/length_state_machine_0/inst/internal_state[1]_i_1_n_0            | display_block_i/length_state_machine_0/inst/internal_state[1]_i_3_n_0               |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/VSYNC                                             |                                                                                  | display_block_i/cell_array_ag_wraper_0/inst/sub/ROW[7].COLUMN[7].cell_ag/reset_0    |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/out_reg_LDC_i_1__2_n_0 |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/out_reg_LDC_i_2__2_n_0 |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[2].debouncer_ag/out_reg_LDC_i_1__1_n_0 |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[2].debouncer_ag/out_reg_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[1].debouncer_ag/out_reg_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[1].debouncer_ag/out_reg_LDC_i_1__0_n_0 |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[0].debouncer_ag/out_reg_LDC_i_1_n_0    |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[0].debouncer_ag/out_reg_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  display_block_i/direction_decider_0/inst/FUR[2].debouncer_ag/out_reg_LDC_i_1__1_n_0 |                                                                                  | display_block_i/direction_decider_0/inst/FUR[2].debouncer_ag/out_reg_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  display_block_i/direction_decider_0/inst/FUR[1].debouncer_ag/out_reg_LDC_i_1__0_n_0 |                                                                                  | display_block_i/direction_decider_0/inst/FUR[1].debouncer_ag/out_reg_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  display_block_i/direction_decider_0/inst/FUR[0].debouncer_ag/out_reg_LDC_i_1_n_0    |                                                                                  | display_block_i/direction_decider_0/inst/FUR[0].debouncer_ag/out_reg_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  display_block_i/VGA_output_0/inst/VSYNC                                             | reset2_IBUF                                                                      | display_block_i/seven_seg_driver_0/inst/current_seg[1]_i_2_n_0                      |                1 |              2 |         2.00 |
+|  display_block_i/VGA_output_0/inst/VSYNC                                             |                                                                                  | display_block_i/snake_increment_0/inst/internal_state[5]_i_2_n_0                    |                2 |              6 |         3.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        |                                                                                  | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/reset_0                |                3 |              6 |         2.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        | display_block_i/apple_setter_0/inst/state[5]_i_1_n_0                             | display_block_i/apple_setter_0/inst/state[5]_i_2_n_0                                |                2 |              6 |         3.00 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/delay[6]_i_1__2_n_0 | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/reset_0                |                2 |              7 |         3.50 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        | display_block_i/direction_decider_0/inst/FUR[2].debouncer_ag/delay[6]_i_1__1_n_0 | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/reset_0                |                2 |              7 |         3.50 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        | display_block_i/direction_decider_0/inst/FUR[1].debouncer_ag/delay[6]_i_1__0_n_0 | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/reset_0                |                2 |              7 |         3.50 |
+|  display_block_i/VGA_output_0/inst/HSYNC_BUFG                                        | display_block_i/direction_decider_0/inst/FUR[0].debouncer_ag/delay[6]_i_1_n_0    | display_block_i/direction_decider_0/inst/FUR[3].debouncer_ag/reset_0                |                2 |              7 |         3.50 |
+|  display_block_i/clk_wiz_0/inst/clk_out1                                             | display_block_i/VGA_output_0/inst/Y[9]_i_1_n_0                                   | display_block_i/VGA_output_0/inst/X[10]_i_2_n_0                                     |                4 |             10 |         2.50 |
+|  display_block_i/clk_wiz_0/inst/clk_out1                                             |                                                                                  | display_block_i/VGA_output_0/inst/X[10]_i_2_n_0                                     |                7 |             11 |         1.57 |
+|  display_block_i/clk_wiz_0/inst/clk_out1                                             |                                                                                  |                                                                                     |                5 |             12 |         2.40 |
+|  display_block_i/clk_wiz_0/inst/clk_out1                                             |                                                                                  | display_block_i/memory_mapper_0/inst/reset_0                                        |               11 |             27 |         2.45 |
+|  display_block_i/snake_increment_0/inst/update_clk_BUFG                              |                                                                                  | display_block_i/cell_array_ag_wraper_0/inst/sub/ROW[7].COLUMN[7].cell_ag/reset_0    |              163 |            256 |         1.57 |
++--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

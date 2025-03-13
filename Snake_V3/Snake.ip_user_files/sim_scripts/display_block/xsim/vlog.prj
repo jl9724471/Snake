@@ -1,0 +1,17 @@
+verilog xil_defaultlib --include "../../../../Snake.gen/sources_1/bd/display_block/ipshared/3cbc" \
+"../../../bd/display_block/ip/display_block_clk_wiz_0_0/display_block_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/display_block/ip/display_block_clk_wiz_0_0/display_block_clk_wiz_0_0.v" \
+"../../../bd/display_block/ip/display_block_blk_mem_gen_0_0/sim/display_block_blk_mem_gen_0_0.v" \
+"../../../bd/display_block/ip/display_block_VGA_output_0_1/sim/display_block_VGA_output_0_1.v" \
+"../../../bd/display_block/ip/display_block_memory_mapper_0_0/sim/display_block_memory_mapper_0_0.v" \
+"../../../bd/display_block/ip/display_block_cell_array_ag_wraper_0_0/sim/display_block_cell_array_ag_wraper_0_0.v" \
+"../../../bd/display_block/ip/display_block_length_state_machine_0_0/sim/display_block_length_state_machine_0_0.v" \
+"../../../bd/display_block/ip/display_block_apple_setter_0_0/sim/display_block_apple_setter_0_0.v" \
+"../../../bd/display_block/ip/display_block_snake_increment_0_0/sim/display_block_snake_increment_0_0.v" \
+"../../../bd/display_block/ip/display_block_direction_decider_0_0/sim/display_block_direction_decider_0_0.v" \
+"../../../bd/display_block/sim/display_block.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,343 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Mar  3 09:38:19 2025
+# Process ID         : 18524
+# Current directory  : C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.runs/display_block_cell_array_ag_wraper_0_0_synth_1
+# Command line       : vivado.exe -log display_block_cell_array_ag_wraper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source display_block_cell_array_ag_wraper_0_0.tcl
+# Log file           : C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.runs/display_block_cell_array_ag_wraper_0_0_synth_1/display_block_cell_array_ag_wraper_0_0.vds
+# Journal file       : C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.runs/display_block_cell_array_ag_wraper_0_0_synth_1\vivado.jou
+# Running On         : JACKS_LAPTOP_4
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33832 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35979 MB
+# Available Virtual  : 17878 MB
+#-----------------------------------------------------------
+source display_block_cell_array_ag_wraper_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top display_block_cell_array_ag_wraper_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24388
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 993.348 ; gain = 464.914
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell_array_ag_wraper.v:8]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell_array_ag_wraper.v:9]
+INFO: [Synth 8-6157] synthesizing module 'display_block_cell_array_ag_wraper_0_0' [c:/Users/jl972/Desktop/HDL/Snake_V3/Snake.gen/sources_1/bd/display_block/ip/display_block_cell_array_ag_wraper_0_0/synth/display_block_cell_array_ag_wraper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'cell_array_ag_wraper' [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell_array_ag_wraper.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cell_array_ag' [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell_array_ag.v:16]
+INFO: [Synth 8-6157] synthesizing module 'generic_cell' [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell.v:16]
+WARNING: [Synth 8-6090] variable 'ate_apple' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'generic_cell' (0#1) [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'cell_array_ag' (0#1) [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell_array_ag.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'cell_array_ag_wraper' (0#1) [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell_array_ag_wraper.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'display_block_cell_array_ag_wraper_0_0' (0#1) [c:/Users/jl972/Desktop/HDL/Snake_V3/Snake.gen/sources_1/bd/display_block/ip/display_block_cell_array_ag_wraper_0_0/synth/display_block_cell_array_ag_wraper_0_0.v:53]
+WARNING: [Synth 8-7137] Register internal_state_reg in module generic_cell has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.srcs/sources_1/new/cell.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1104.727 ; gain = 576.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1104.727 ; gain = 576.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1104.727 ; gain = 576.293
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1104.727 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1135.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1137.293 ; gain = 1.301
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1137.293 ; gain = 608.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1137.293 ; gain = 608.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1137.293 ; gain = 608.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1137.293 ; gain = 608.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 64    
+	                1 Bit    Registers := 65    
++---Muxes : 
+	   2 Input    3 Bit        Muxes := 128   
+	   3 Input    3 Bit        Muxes := 64    
+	   4 Input    3 Bit        Muxes := 64    
+	   2 Input    1 Bit        Muxes := 833   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__1.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__1.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__2.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__2.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__3.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__3.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__4.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__4.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__5.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__5.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__6.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__6.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__7.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__7.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__8.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__8.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__9.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__9.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__10.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__10.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[0]_LDC) is unused and will be removed from module generic_cell__10.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[0]_C) is unused and will be removed from module generic_cell__10.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__11.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__11.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__12.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__12.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__13.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__13.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__14.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__14.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__15.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__15.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__16.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__16.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__17.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__17.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__18.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__18.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__19.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__19.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__20.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__20.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__21.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__21.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__22.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__22.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__23.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__23.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__24.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__24.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__25.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__25.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__26.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__26.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__27.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__27.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__28.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__28.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__29.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__29.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__30.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__30.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__31.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__31.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__32.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__32.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__33.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__33.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__34.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__34.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__35.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__35.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__36.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__36.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__37.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__37.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__38.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__38.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__39.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__39.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__40.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__40.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__41.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__41.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__42.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__42.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__43.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__43.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__44.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__44.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__45.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__45.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__46.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__46.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__47.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__47.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__48.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__48.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_LDC) is unused and will be removed from module generic_cell__49.
+WARNING: [Synth 8-3332] Sequential element (internal_state_reg[2]_C) is unused and will be removed from module generic_cell__49.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1163.949 ; gain = 635.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1313.562 ; gain = 785.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1315.676 ; gain = 787.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1346.996 ; gain = 818.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1532.809 ; gain = 1004.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1532.809 ; gain = 1004.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1532.809 ; gain = 1004.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1532.809 ; gain = 1004.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1532.809 ; gain = 1004.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1532.809 ; gain = 1004.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |    46|
+|3     |LUT3  |    60|
+|4     |LUT4  |   271|
+|5     |LUT5  |   198|
+|6     |LUT6  |   487|
+|7     |MUXF7 |    24|
+|8     |MUXF8 |    12|
+|9     |FDCE  |   191|
+|10    |FDPE  |    66|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1532.809 ; gain = 1004.375
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 131 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 1532.809 ; gain = 971.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1532.809 ; gain = 1004.375
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1532.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1532.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8a9fc563
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 1532.809 ; gain = 1191.180
+INFO: [Coretcl 2-1174] Renamed 66 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1532.809 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jl972/Desktop/HDL/Snake_V3/Snake.runs/display_block_cell_array_ag_wraper_0_0_synth_1/display_block_cell_array_ag_wraper_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file display_block_cell_array_ag_wraper_0_0_utilization_synth.rpt -pb display_block_cell_array_ag_wraper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  3 09:39:29 2025...
